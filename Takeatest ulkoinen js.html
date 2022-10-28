@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>  
+<head>
+	<title>Take a test -työkalu </title>
+	<style>
+	.element{
+		width: 80%;
+		margin: 20px auto 0 auto;
+		background-color: #ccc;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-family: 'Noto Sans', sans-serif;
+		overflow-wrap: break-word;
+	}
+	.element input[type=text]{
+		width: 80%;
+		padding: 5px;
+		font-size: 20px;
+		margin-bottom: 20px !important;
+	}
+	.element input[type=button]{
+		padding: 5px;
+		font-size: 20px;
+		margin-bottom: 20px !important;
+	}
+	</style>
+
+<script src="skriptit.js"></script>
+
+</head>  
+<body onload="parseurl()">
+<div class="element">
+		<h1>Luo Take a test -linkki</h1>
+		<p>Syötä osallistumislinkki kokeeseen (esim. Forms):</p>
+<input type="text" autocomplete="off" id="myInput" oninput="enter()"><br>
+<input type= "button" id="painike" onclick = "luoLinkki()" value = "Luo linkki">
+		<p id="ohje"></p><hr>
+ <strong><a id="linkkielementti"></a></strong><br>
+
+<strong><p id="linkki"></p></strong><br>
+
+</div>
+
+</body>  
+</html>
+
